@@ -1,0 +1,5 @@
+name: BungeeAPI
+version: '${version}'
+main: me.xpyex.plugin.bukkit.bungeeapi.BungeeAPI
+authors: [ XPYEX ]
+description: BungeeAPI
