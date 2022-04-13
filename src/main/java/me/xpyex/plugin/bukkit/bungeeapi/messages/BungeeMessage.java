@@ -33,7 +33,7 @@ public class BungeeMessage {
         this.title = title;
         this.messages = messages;
         ByteArrayDataOutput temp = ByteStreams.newDataOutput();
-        temp.writeUTF("Forward");  //定义该信息为发送给BC，而非玩家
+        temp.writeUTF("Forward");  //定义该信息为发送给BC，而非玩家，类型为自定义信息
         temp.writeUTF(serverName);  //指定服务器
         temp.writeUTF(title);  //定义信息标题，将在接收时判断信息类型
         ByteArrayOutputStream msgBytes = new ByteArrayOutputStream();

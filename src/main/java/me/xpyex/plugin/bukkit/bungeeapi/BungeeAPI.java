@@ -107,7 +107,7 @@ public final class BungeeAPI extends JavaPlugin {
         }
     }
 
-    public void runCMD(String targetServer, String... cmd) {
+    public static void runCMD(String targetServer, String... cmd) {
         try {
             new RunCmdOrder(targetServer,cmd).send();
         }
@@ -116,7 +116,7 @@ public final class BungeeAPI extends JavaPlugin {
         }
     }
 
-    public void runPlayerCMD(String targetServer, String target, String... cmd) {
+    public static void runPlayerCMD(String targetServer, String target, String... cmd) {
         try {
             Player p = Bukkit.getPlayerExact(target);
             if (p == null) {
@@ -129,7 +129,7 @@ public final class BungeeAPI extends JavaPlugin {
         }
     }
 
-    public void privateMsg(String targetServer, String target, String... msg) {
+    public static void privateMsg(String targetServer, String target, String... msg) {
         try {
             Player p = Bukkit.getPlayerExact(target);
             if (p == null) {
